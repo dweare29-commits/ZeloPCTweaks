@@ -1,89 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Zelo PC Optimization Tweaks</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zelo PC Optimization Tweaks — Ultimate Bundle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-    body {
-        background-color: #000;
-        color: #fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-        margin: 0;
-        padding: 40px;
-    }
+:root{
+  --bg:#000; --fg:#fff; --muted:#bbb; --purple:#9b59b6; --purple-d:#7d3c98; --card:#111; --border:#2a2a2a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.hero{
+  text-align:center; padding:72px 20px 32px;
+}
+h1{font-size:44px; margin:0 0 12px; color:var(--purple); font-weight:800}
+.sub{max-width:800px;margin:0 auto;color:#eaeaea;line-height:1.6}
+.hr{width:120px;height:4px;background:var(--purple);border-radius:999px;margin:20px auto 0}
 
-    h1 {
-        color: #9b59b6;
-        font-size: 3em;
-        margin-bottom: 5px;
-    }
+.cta{
+  display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:28px;
+}
+.btn{
+  display:inline-block; padding:16px 26px; border-radius:10px; font-weight:700; text-decoration:none;
+  transition:.25s; border:2px solid transparent;
+}
+.btn-primary{ background:var(--purple); color:#fff; box-shadow:0 8px 24px rgba(155,89,182,.35);}
+.btn-primary:hover{ background:var(--purple-d); transform:translateY(-1px);}
+.btn-ghost{ border-color:var(--purple); color:#fff;}
+.btn-ghost:hover{ background:#160e18;}
 
-    hr {
-        width: 60%;
-        border: 2px solid #9b59b6;
-        margin-bottom: 30px;
-    }
+.grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); margin:38px 0}
+.card{
+  background:var(--card); border:1px solid var(--border); border-radius:14px; padding:22px;
+  transition:.25s;
+}
+.card:hover{ box-shadow:0 10px 30px rgba(155,89,182,.25); transform:translateY(-4px); }
+.card h3{margin:6px 0 8px; color:#fff; font-size:20px}
+.card p{margin:0;color:#ddd; line-height:1.55}
 
-    p {
-        max-width: 700px;
-        text-align: center;
-        font-size: 1.1em;
-        line-height: 1.6em;
-        margin-bottom: 30px;
-    }
+.section-title{font-size:28px; margin:40px 0 10px; font-weight:800}
+.small{color:var(--muted); font-size:14px}
 
-    .download-btn {
-        background-color: #9b59b6;
-        color: #fff;
-        padding: 20px 50px;
-        font-size: 1.2em;
-        text-decoration: none;
-        border-radius: 10px;
-        transition: 0.3s;
-        box-shadow: 0px 4px 15px rgba(155, 89, 182, 0.4);
-    }
+.table{width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden;border-radius:12px}
+.table th,.table td{padding:14px 16px; border-bottom:1px solid var(--border); text-align:left}
+.table th{background:#0b0b0b; color:#ddd; font-weight:600}
+.badge{display:inline-block;padding:4px 10px;border:1px solid var(--purple);border-radius:999px;font-size:12px;color:#fff}
 
-    .download-btn:hover {
-        background-color: #7d3c98;
-        box-shadow: 0px 6px 20px rgba(155, 89, 182, 0.6);
-    }
-
-    .warning {
-        color: #bbb;
-        font-size: 0.9em;
-        text-align: center;
-        margin-top: 15px;
-        max-width: 700px;
-    }
-
-    footer {
-        margin-top: 50px;
-        font-size: 0.9em;
-        color: #bbb;
-    }
+.notice{color:#ccc; font-size:14px; text-align:center; margin-top:10px}
+footer{padding:40px 16px; text-align:center; color:var(--muted)}
+code{background:#141414;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
 </style>
 </head>
 <body>
+  <header class="hero">
+    <div class="container">
+      <h1>Zelo PC Optimization Tweaks</h1>
+      <div class="hr"></div>
+      <p class="sub">
+        Safe, effective Windows optimizations for gaming and performance. Try the free Starter Pack,
+        then unlock the <strong>Ultimate Bundle</strong> for a full suite of advanced tweaks in one clean tool.
+      </p>
+      <div class="cta">
+        <!-- Paid: Gumroad product link -->
+        <a class="btn btn-primary" href="YOUR_GUMROAD_PRODUCT_URL">Buy Ultimate Bundle</a>
+        <!-- Free download from your repo -->
+        <a class="btn btn-ghost" href="ZeloStarterPack.bat" download>Download Starter Pack (Free)</a>
+      </div>
+      <p class="notice">⚠️ Windows/Browser may warn about .bat files. These are safe Zelo tools. For fewer warnings, consider the Ultimate ZIP after purchase.</p>
+    </div>
+  </header>
 
-<h1>Zelo PC Optimization Tweaks</h1>
-<hr>
-<p>Boost your PC performance safely and easily! This tweak pack is designed to optimize Windows for gaming, improve FPS, and enhance overall system responsiveness. Perfect for Fortnite and other games.</p>
+  <main class="container">
+    <!-- Benefits / Features -->
+    <h2 class="section-title">What You Get</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>FPS Boost Suite</h3>
+        <p>Disables Game DVR/overlays, applies high-performance flags, and reduces UI overhead to keep frames stable.</p>
+      </div>
+      <div class="card">
+        <h3>Gaming Mode Services</h3>
+        <p>Safely pares down background services while you play (no risky nukes). Reboot restores defaults.</p>
+      </div>
+      <div class="card">
+        <h3>Power Plan Optimization</h3>
+        <p>Enables High Performance power plan to reduce CPU downclocking and input latency spikes.</p>
+      </div>
+      <div class="card">
+        <h3>Quick Cleanup</h3>
+        <p>Temp/cache cleanup and DNS flush for smoother online matches and snappier general use.</p>
+      </div>
+    </div>
 
-<a href="ZeloPCTweaks.bat" class="download-btn" download>Download Now</a>
+    <!-- Comparison -->
+    <h2 class="section-title">Compare Packs</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Starter Pack <span class="badge">Free</span></th>
+          <th>Ultimate Bundle <span class="badge">Premium</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Basic FPS tweaks</td><td>✔</td><td>✔ (enhanced)</td></tr>
+        <tr><td>Memory cleanup</td><td>✔</td><td>✔ + extras</td></tr>
+        <tr><td>Service trimming (Gaming Mode)</td><td>—</td><td>✔</td></tr>
+        <tr><td>Power plan optimizer</td><td>—</td><td>✔</td></tr>
+        <tr><td>One-click “Apply All”</td><td>—</td><td>✔</td></tr>
+        <tr><td>ZIP package + ReadMe</td><td>—</td><td>✔</td></tr>
+        <tr><td>Priority support/updates</td><td>—</td><td>✔</td></tr>
+      </tbody>
+    </table>
 
-<p class="warning">
-⚠️ Windows may warn that this file could be harmful. This file is safe and part of the Zelo PC Optimization Tweaks pack.
-</p>
+    <!-- How to use -->
+    <h2 class="section-title">How to Use</h2>
+    <div class="grid">
+      <div class="card"><h3>1) Download</h3><p>Get the <strong>Starter Pack</strong> or purchase the <strong>Ultimate Bundle</strong>.</p></div>
+      <div class="card"><h3>2) Unzip (Ultimate)</h3><p>Right-click the ZIP → Extract All → open the folder.</p></div>
+      <div class="card"><h3>3) Run as Admin</h3><p>Right-click the <code>.bat</code> → Run as administrator. Follow on-screen prompts.</p></div>
+    </div>
 
-<footer>&copy; 2025 Zelo Tweaks | Version 1.0</footer>
+    <!-- Direct paid ZIP fallback (optional plain link if you want to host ZIP on GitHub too) -->
+    <p class="notice">Already purchased? <a class="btn btn-ghost" href="ZeloUltimateBundle_v1.0.zip">Download Ultimate Bundle ZIP</a></p>
+  </main>
 
+  <footer>
+    &copy; 2025 Zelo Tweaks — All rights reserved • v1.0
+  </footer>
+
+  <!-- Optional: Gumroad Overlay (uncomment after you have your product URL)
+  <script src="https://gumroad.com/js/gumroad-embed.js"></script>
+  -->
 </body>
 </html>
+
+
 
 
 
