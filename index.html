@@ -8,47 +8,63 @@
         background-color: #000;
         color: #fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px;
     }
 
     h1 {
         color: #9b59b6;
         font-size: 3em;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     hr {
+        width: 60%;
         border: 2px solid #9b59b6;
-        width: 50%;
-        margin: 20px auto;
-    }
-
-    p {
-        font-size: 1.2em;
         margin-bottom: 30px;
     }
 
-    a {
-        display: inline-block;
-        text-decoration: none;
+    p {
+        max-width: 700px;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    .download-btn {
         background-color: #9b59b6;
         color: #fff;
-        padding: 15px 30px;
-        border-radius: 8px;
-        font-weight: bold;
-        margin: 10px;
-        transition: background-color 0.3s;
+        padding: 20px 50px;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        box-shadow: 0px 4px 15px rgba(155, 89, 182, 0.4);
     }
 
-    a:hover {
+    .download-btn:hover {
         background-color: #7d3c98;
+        box-shadow: 0px 6px 20px rgba(155, 89, 182, 0.6);
     }
 
-    .note {
+    .warning {
         color: #bbb;
         font-size: 0.9em;
-        margin-top: 20px;
+        text-align: center;
+        margin-top: 15px;
+        max-width: 700px;
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 0.9em;
+        color: #bbb;
     }
 </style>
 </head>
@@ -56,18 +72,20 @@
 
 <h1>Zelo PC Optimization Tweaks</h1>
 <hr>
-<p>Boost your PC performance safely and easily! Download the tweaks below to optimize your system for FPS and smoother gameplay.</p>
+<p>Boost your PC performance safely and easily! This tweak pack is designed to optimize Windows for gaming, improve FPS, and enhance overall system responsiveness. Perfect for Fortnite and other games.</p>
 
-<a href="ZeloPcTweaks.bat" download>ZeloPcTweaks</a>
-<a href="MemoryOptimize.bat" download>Memory Optimization</a>
-<a href="BackgroundCleanup.bat" download>Background Cleanup</a>
+<a href="ZeloPCTweaks.bat" class="download-btn" download>Download Now</a>
 
-<p class="note">
-⚠️ Windows may warn that this file could be harmful. These files are safe and part of the Zelo PC Optimization Tweaks.
+<p class="warning">
+⚠️ Windows may warn that this file could be harmful. This file is safe and part of the Zelo PC Optimization Tweaks pack.
 </p>
+
+<footer>&copy; 2025 Zelo Tweaks | Version 1.0</footer>
 
 </body>
 </html>
+
+
 
 
 
